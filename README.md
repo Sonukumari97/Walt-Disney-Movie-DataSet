@@ -7,3 +7,6 @@ To create a dataset using wikipedia webpage we need following library :
  - pickle :    to store python object like datetime 
  - pandas :    to make a dataframe and save as a csv file 
 
+after creating dataset we do some analysis like :
+ - handling NaN value
+ - visualizing using matplotlib and seabon library 
