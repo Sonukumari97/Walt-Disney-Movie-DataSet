@@ -5,16 +5,25 @@ To gather data from wikipedia page of List of Walt Disney Pictures films we can 
 
 Since the data is stored in a table, it will be straight forward to scrape with just a few lines of code.
 
-All results are contained within table called in <tr> elements and these are all visible on the one page. This will not always be the case and when results span over many pages you may need to either change the number of results displayed on a webpage, or loop over all pages to gather all the information.
-On the League Table webpage, a table containing 100 results is displayed. When inspecting the page it is easy to see a pattern in the html. The results are contained in rows within the table:
+All results are contained within table class called wikitable sortable and in <i> elements.
+On the 1960 Table webpage, a table containing 52 results is displayed. When inspecting the page it is easy to see a pattern in the html. The results are contained in rows <tr> within the table.
+ 
+all of the results are contained within a table, we can search the soup object(Created using BeautifulSoup library) for the table using the find method. We can then find each row within the table using the find_all method.
+ 
 To create a dataset using wikipedia webpage we need following library :
- - BeautifulSoup :    used for web scraping
-    - BeautifulSoup helps us to handle the html.
+ - BeautifulSoup :    used for web scraping and helps us to handle the html.
+
  - request :         request(Https) is used to either retrieve data from a specified URI or to push data to a server.
+
  - re(regular expression) :   used for string searching and manipulation
+ 
  - json :      to store movie dictionary 
+ 
  - pickle :    to store python object like datetime 
+ 
  - pandas :    to make a dataframe and save as a csv file 
+ 
+ - csv : this is alternative of JSON file
 
 after creating dataset we do some analysis like :
  - handling NaN value
