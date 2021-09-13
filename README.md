@@ -15,7 +15,7 @@ On the 1960 Table webpage, a table containing 52 results is displayed. When insp
 
  - re(regular expression) :   used for string searching and manipulation
  
- - json :      to store movie dictionary and this automatically create a pythan data structure
+ - json :      to store movie dictionary and this automatically create a pythan data structure and json is very easy to iterate through it 
  
  - pickle :    to store python object like datetime 
  
